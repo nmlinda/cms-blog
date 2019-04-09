@@ -1,10 +1,10 @@
 # cms-blog
 Creating an example blog using netlify cms and middleman
 
-## Install dependencies
+**Install dependencies**
 
 `bundle install`
 
-## Run Middleman
+**Run middleman**
 
 `middleman server`
