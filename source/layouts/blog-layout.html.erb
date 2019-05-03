@@ -1,5 +1,13 @@
-<h1>
-  <%= current_page.data.title %>
-</h1>
-
-<%= yield %>
+<div class="box">
+	<h1 class="title">
+		<%= current_page.data.title %>
+	</h1>
+	<h3 class="subtitle">
+		<%= current_page.data.date %>
+	</h3>
+	<div class="content">
+		<p class="is-medium">
+			<%= markdown yield %>
+		</p>
+	</div>
+</div>
