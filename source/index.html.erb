@@ -6,6 +6,7 @@ title: CMS Blog
 <h1>Recent articles</h1>
 <ul>
 <% blog.articles.each do | article | %>
+  <%= article.custom_collections  = "/posts/{{year}}-{{month}}-{{day}}-{{title}}.html.md" %>
   <li>
     <h3 class="title">
       <%= article.title %>
@@ -15,7 +16,22 @@ title: CMS Blog
   </li>
 
 <% end %>
+</ul>
 
+
+<h1>Recent stories</h1>
+<ul>
+<% blog.articles.each do | article | %>
+  <%= article.sources = "/stories/{{title}}.html.md" %>
+  <li>
+    <h3 class="title">
+      <%= article.title %>
+    </h3>
+
+    <%= link_to 'Read more', article %>
+  </li>
+
+<% end %>
 </ul>
 </section>
 </div>
