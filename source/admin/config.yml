@@ -27,6 +27,6 @@ collections:
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Publish Date, name: date, widget: datetime}
-      - {label: Benefit, name: body, widget: markdown}
-      - {label: How To, name: body, widget: markdown}
-      - {label: Faq, name: body, widget: markdown}
+      - {label: Benefit, name: benefit, widget: string}
+      - {label: How To, name: howto, widget: string}
+      - {label: Faq, name: faq, widget: string}
