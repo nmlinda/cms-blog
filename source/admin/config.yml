@@ -71,11 +71,12 @@ collections:
       - label: Header
         name: header
         widget: image
-      - label: Content
-        name: content
-        widget: object
-          - {label: Title, name: title, widget: string}
-          - {label: Description, name: description, widget: string}
+      - label: Title
+        name: title
+        widget: string
+      - label: Description
+        name: description
+        widget: string
       - label: Layout
         name: layout
         widget: select
