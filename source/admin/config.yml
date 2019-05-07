@@ -31,26 +31,26 @@ collections:
       - {label: How To, name: howto, widget: string}
       - {label: Faq, name: faq, widget: string}
 
-  - name: pages
-    label: Pages
-    files:
-      - file: data/pages/home.yml
-        label: Home
-        name: home
-        fields:
-        - label: Header
-          name: header
-          widget: image
-        - label: Content
-          name: content
-          widget: list
-            - {label: Title, name: title, widget: string}
-            - {label: Description, name: description, widget: string}
-        - label: Layout
-          name: layout
-          widget: select
-          options: ['normal', ' new_school', ' parent']
-          default: ''
+  # - name: pages
+  #   label: Pages
+  #   files:
+  #     - file: data/pages/home.yml
+  #       label: Home
+  #       name: home
+  #       fields:
+  #       - label: Header
+  #         name: header
+  #         widget: image
+  #       - label: Content
+  #         name: content
+  #         widget: list
+  #           - {label: Title, name: title, widget: string}
+  #           - {label: Description, name: description, widget: string}
+  #       - label: Layout
+  #         name: layout
+  #         widget: select
+  #         options: ['normal', ' new_school', ' parent']
+  #         default: ''
         
   - name: products
     label: Products
