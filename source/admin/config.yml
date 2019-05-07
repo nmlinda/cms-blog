@@ -4,7 +4,7 @@ backend:
 media_folder: source/images/uploads
 public_folder: /images/uploads
 
-collections:
+pages:
   - name: blog
     label: Blog
     folder: source/posts/
@@ -16,10 +16,11 @@ collections:
       - {label: Title, name: title, widget: string}
       - {label: Publish Date, name: date, widget: datetime}
       - {label: Body, name: body, widget: markdown}
+
   - name: story
-    label: story
+    label: Story
     folder: source/stories/
-    extension: .html.erb
+    extension: .html.md
     format: frontmatter
     create: true
     slug: '{{title}}'

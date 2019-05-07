@@ -7,14 +7,15 @@ title: CMS Blog
 <ul>
 <% blog.articles.each do | article | %>
   <li>
-    <h2 class="title">
+    <h3 class="title">
       <%= article.title %>
-    </h2>
+    </h3>
 
     <%= link_to 'Read more', article %>
   </li>
 
 <% end %>
+
 </ul>
 </section>
 </div>
