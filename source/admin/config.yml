@@ -38,6 +38,7 @@ collections:
         name: product-list
         file: data/products.yml
         widget: list
+        create: true
         fields:
           - {label: Name, name: name, required: true, widget: string}
           - {label: Description, name: description, required: true, widget: string}
