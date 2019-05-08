@@ -56,10 +56,11 @@ collections:
   - name: products
     label: Products
     file: data/products.yml
+    folder: data/
     widget: list
     fields:
-      - {label: Name, name: name, widget: string}
-      - {label: Description, name: description, widget: string}
+      - {label: Name, name: name, required: true, widget: string}
+      - {label: Description, name: description, required: true, widget: string}
 
   - name: pages
     label: Pages
