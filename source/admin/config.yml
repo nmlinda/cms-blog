@@ -33,15 +33,18 @@ collections:
       
   - name: products
     label: Products
-    file: data/products.yml
-    fields:
-      - label: Product
-        name: prod_item
-        widget: list
-        allow_add: true
+    files:
+      - label: Item
+        name: item
+        file: data/products.yml
         fields:
-          - {label: Name, name: name, required: true, widget: string}
-          - {label: Description, name: description, required: true, widget: text}
+          - label: Product
+            name: prod_item
+            widget: list
+            allow_add: true
+            fields:
+              - {label: Name, name: name, required: true, widget: string}
+              - {label: Description, name: description, required: true, widget: text}
 
   - name: pages
     label: Pages
