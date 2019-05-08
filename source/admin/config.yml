@@ -34,7 +34,9 @@ collections:
   - name: products
     label: Products
     files:
-      - file: data/products.yml
+      - label: Product List
+        name: product-list
+        file: data/products.yml
         widget: list
         fields:
           - {label: Name, name: name, required: true, widget: string}
